@@ -139,7 +139,7 @@ console.log(`Sinav Notunuza göre Harf Notunuz : ${harfNotu}`);*/
 
 /*---------------------------------------- Functions ------------------------------- */
 
-let username = window.prompt("Lutfen Isminizi Giriniz : ");
+/*let username = window.prompt("Lutfen Isminizi Giriniz : ");
 let age = Number(window.prompt("Lutfen Yasinizi Giriniz : "));
 
 function dogumGunuSarkisi(){
@@ -150,4 +150,45 @@ function dogumGunuSarkisi(){
     console.log(`Artik ${age + 1 } Yasindasin !!`);
 }
 
-dogumGunuSarkisi();
+dogumGunuSarkisi(); */
+
+
+
+
+/*function ekle(x,y){
+    return x+y;
+}
+function cıkart(x,y){
+    return x-y;
+}
+function carp(x,y){
+    return x*y;
+}
+function bol(x,y){
+    return x/y;
+}
+function ciftSayi(sayi){
+    return sayi % 2 === 0 ? true : false ;
+}
+function tekSayi(sayi1){
+    return sayi1 % 2 !== 0 ? true:false;
+}
+x=Number(window.prompt("ilk degeri giriniz :"));
+y=Number(window.prompt("ikinci degeri giriniz :"));
+window.alert(` İki sayinin toplamı :${ekle(x,y)}`)
+window.alert(` ${x} cift midir : ${ciftSayi(x)}`);
+window.alert(` ${y} tek midir :${tekSayi(y)}`);*/
+
+
+
+function validMail(email){ 
+    if(email.includes("@")){
+        window.alert("Evet bu mail gecerli");
+    }else{
+        window.alert("Malesef bu gecerli degil");
+    }
+}
+
+let mail = window.prompt("Mail Adresinizi Giriniz :  ");
+
+validMail(mail);

@@ -140,7 +140,7 @@ console.log(`Sinav Notunuza göre Harf Notunuz : ${harfNotu}`);*/
 /*---------------------------------------- Functions ------------------------------- */
 
 let username = window.prompt("Lutfen Isminizi Giriniz : ");
-let age = window.prompt("Lutfen Yasinizi Giriniz : ");
+let age = Number(window.prompt("Lutfen Yasinizi Giriniz : "));
 
 function dogumGunuSarkisi(){
     console.log("Dogum Gunun Kutlu Olsun ");

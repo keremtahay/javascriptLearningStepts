@@ -131,7 +131,23 @@ switch(true){
 
 console.log(`Sinav Notunuza göre Harf Notunuz : ${harfNotu}`);*/
 
+/*--------------------------------------- For Yapısı -----------------------------*/ 
 
-for(let i = 1; i<=10; i++){
+/*for(let i = 1; i<=10; i++){
     console.log(i);
+}*/
+
+/*---------------------------------------- Functions ------------------------------- */
+
+let username = window.prompt("Lutfen Isminizi Giriniz : ");
+let age = window.prompt("Lutfen Yasinizi Giriniz : ");
+
+function dogumGunuSarkisi(){
+    console.log("Dogum Gunun Kutlu Olsun ");
+    console.log("Dogum Gunun Kutlu Olsun ");
+    console.log(`Dogum Gunun Kutlu Olsun ${username} `);
+    console.log("Dogum Gunun Kutlu Olsun ");
+    console.log(`Artik ${age + 1 } Yasindasin !!`);
 }
+
+dogumGunuSarkisi();

@@ -1,0 +1,21 @@
+body{
+    text-align:center;
+}
+.lbl{
+    color:rgb(0, 0, 0);
+}
+#myLabel{
+    font-size:2em;
+}
+#myLabel2{
+    font-size:2em;
+}
+#myLabel3{
+    font-size:2em;
+}
+#btn1{
+    align-items: center;
+    font-size:3em;
+    padding:5px 10px;
+
+}

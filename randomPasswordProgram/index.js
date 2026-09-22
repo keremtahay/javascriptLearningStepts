@@ -1,31 +1,37 @@
 function parolaOlusturma(uzunluk , kucukHarfler , buyukHarfler , sayilar, noktalamaIsaretleri){
 
-    const uzunluk = 0;
-    const kucukHarfler = "abcdefghijklmnoprqstuvwyz";
-    const buyukharfler = "ABCDEFGHIJKLMNOPQRSTUVWYZ";
-    const sayilar = "0123456789";
-    const noktalamaIsaretleri = "!.<>,;:@€₺/*-+=";
+    const icerikKucukHarfler = "abcdefghijklmnoprqstuvwyz";
+    const icerikBuyukHarfler = "ABCDEFGHIJKLMNOPQRSTUVWYZ";
+    const icerikSayilar = "0123456789";
+    const icerikNoktalamaIsaretleri = "!.<>,;:@€₺/*-+=";
 
     let kullanilanKarakterler = "";
     let password = "";
 
-    kullanilanKarakterler += kucukHarfler ? kucukHarfler : "";
-    kullanilanKarakterler += buyukHarfler ? buyukHarfler : "";
-    kullanilanKarakterler += sayilar ? sayilar : "";
-    kullanilanKarakterler += noktalamaIsaretleri ? noktalamaIsaretleri : "";
+    kullanilanKarakterler += kucukHarfler ? icerikKucukHarfler : "";
+    kullanilanKarakterler += buyukHarfler ? icerikBuyukHarfler : "";
+    kullanilanKarakterler += sayilar ? icerikSayilar : "";
+    kullanilanKarakterler += noktalamaIsaretleri ? icerikNoktalamaIsaretleri : "";
 
-    console.log(kullanilanKarakterler);
-/*    for(let i=0; i<=uzunluk ; i++){
-        password = Math.floor(Math.random(kullanilanKarakterler[i]))
-    }*/
+    if(uzunluk<=0){
+        return "Sifrenizin güvenliği için en az 1 karakter kullanilmalidir.";
+    }
+    if(kullanilanKarakterler.length === 0){
+        return "Boyle bir sifer olusturmaniza raazi olamayiz kb ."
+    }
+    
+    for(let i=0; i<=uzunluk ; i++){
+        let randomIndex = Math.floor(Math.random() * kullanilanKarakterler.length);
+        password += kullanilanKarakterler[randomIndex];
+    }
     
 
-    return " ";
+    return  password;
 }
 
 
 
-const sifreUzunlugu = 12;
+const sifreUzunlugu = 10;
 const sifreKucukHarfler = true;
 const sifreBuyukHarfler = true;
 const sifreSayilar = true;

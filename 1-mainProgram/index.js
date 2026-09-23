@@ -181,7 +181,7 @@ window.alert(` ${y} tek midir :${tekSayi(y)}`);*/
 
 
 
-function validMail(email){ 
+/*function validMail(email){ 
     if(email.includes("@")){
         window.alert("Evet bu mail gecerli");
     }else{
@@ -191,4 +191,30 @@ function validMail(email){
 
 let mail = window.prompt("Mail Adresinizi Giriniz :  ");
 
-validMail(mail);
+validMail(mail);*/
+
+/*------------------------------ Callback -----------------------------------------*/
+
+/*merhaba(username);
+
+function merhaba(kerem){
+    console.log("Merhaba !");
+    kerem();
+}
+
+function username(){
+    console.log("Benim ismim Kerem ");
+}*/
+
+toplam(displayPage,10,20);
+
+function toplam(callback,x,y){
+    let result = x+y;
+    callback(result);
+}
+function displayResult(result){
+    console.log(result);
+}
+function displayPage(result){
+    document.getElementById("myH1").textContent = result;
+}

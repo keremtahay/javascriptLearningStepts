@@ -206,7 +206,7 @@ function username(){
     console.log("Benim ismim Kerem ");
 }*/
 
-toplam(displayPage,10,20);
+/*toplam(displayPage,10,20);
 
 function toplam(callback,x,y){
     let result = x+y;
@@ -217,4 +217,39 @@ function displayResult(result){
 }
 function displayPage(result){
     document.getElementById("myH1").textContent = result;
+}*/
+
+/*---------------------------------- foreach ---------------------------------------------*/ 
+
+/*let number = [1 , 2 , 3 , 4 , 5];
+number.forEach(triple);
+number.forEach(double);
+
+number.forEach(display);
+
+function double(element, index, array){
+    array[index] = element * 2 ;
 }
+
+function triple(element, index, array){  /*Her zaman forEach kullanılırken sıralama böyle olmalı*//*
+    array[index] = element * 3 ;
+}
+
+function display(element){
+    console.log(element);
+}*/
+
+
+
+
+/*let meyveler = ["elma", "ayva", "armut", "karpuz", "kavun", "erik"];
+meyveler.forEach(uppercase);
+meyveler.forEach(display);
+
+function uppercase(element, index, array){
+    array[index] = element.toUpperCase();
+}
+
+function display(element){
+    console.log(element);
+}*/

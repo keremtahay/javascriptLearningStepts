@@ -7,7 +7,7 @@ console.log(`Merhaba ${username}`);*/
 
 /*-------------------- While Yapısı -------------------------------------------*/ 
 
-let loggedIn = true;
+/*let loggedIn = true;
 let username;
 let password;
 
@@ -23,7 +23,7 @@ while(loggedIn){
         console.log("Yanlış username veya password girdiniz bir daha deneyin !");
     
     }
-}
+}*/
 
 /*--------------------- Do-While Yapısı -------------------------------------*/
 

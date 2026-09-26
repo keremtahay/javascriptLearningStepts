@@ -282,7 +282,7 @@ function uppercase(kelime){
 }*/
 
 
-const tarih = ["2005-10-05", "2018-31-11", "2008-08-07"];
+/*const tarih = ["2005-10-05", "2018-31-11", "2008-08-07"];
 const bolunmusTarih = tarih.map(ayirma);
 
 console.log(bolunmusTarih);
@@ -290,4 +290,30 @@ console.log(bolunmusTarih);
 function ayirma(elementler){
     const bolme = elementler.split("-");
     return `${bolme[1]}/${bolme[2]}/${bolme[0]}`;
+}*/
+
+/*------------------------------------------------- filter() ------------------------------- */
+
+/*const sayilar = [1,2,3,4,5,6,7,8,9,10];
+const yeniSayilar= sayilar.filter(ciftSayilar);
+
+console.log(yeniSayilar);
+
+function ciftSayilar(num){
+    return num %2 ===2;
+} */
+
+
+/*const studentsAge = [16,16,17,18,21,21,60,61];
+const teenagerStudents = studentsAge.filter(teenager);
+const adultStudents = studentsAge.filter(adults);
+
+console.log(teenagerStudents);
+console.log(adultStudents);
+
+function teenager(element){
+    return element <= 18;
 }
+function adults(elements){
+    return elements >18;
+}*/

@@ -131,13 +131,13 @@ switch(true){
 
 console.log(`Sinav Notunuza göre Harf Notunuz : ${harfNotu}`);*/
 
-/*--------------------------------------- For Yapısı -----------------------------*/ 
+/*--------------------------------------- For Methods -----------------------------*/ 
 
 /*for(let i = 1; i<=10; i++){
     console.log(i);
 }*/
 
-/*---------------------------------------- Functions ------------------------------- */
+/*---------------------------------------- Functions Declarations ------------------------------- */
 
 /*let username = window.prompt("Lutfen Isminizi Giriniz : ");
 let age = Number(window.prompt("Lutfen Yasinizi Giriniz : "));
@@ -317,3 +317,30 @@ function teenager(element){
 function adults(elements){
     return elements >18;
 }*/
+
+/*--------------------------------------------------- Reduce ------------------------------------ */
+
+/*const numbers = [5,10,15,20,25,30,35,40,45];
+const totalNum = numbers.reduce(total);
+
+console.log(`$${totalNum.toFixed(2)} `)
+
+function total(previous, next){
+    return previous +next ;
+}*/
+
+
+/*const grades = [10,50,40,90,70,65,20];
+const maxGrades = grades.reduce(maxValue);
+const minGrade = grades.reduce(minValue);
+
+console.log(maxGrades);
+console.log(minGrade);
+function maxValue(previous,next){
+    return Math.max(previous,next);
+}
+function minValue(previous,next){
+    return Math.min(previous,next);
+}*/
+
+/*---------------------------------------------- Function Expressions ------------------------------ */

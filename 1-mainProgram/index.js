@@ -253,3 +253,41 @@ function uppercase(element, index, array){
 function display(element){
     console.log(element);
 }*/
+
+/*------------------------------- Maps -----------------------------------------------*/
+
+/*const numbers = [1,2,3,4,5];
+const squares = numbers.map(kare);
+const cubes = numbers.map(kup); 
+
+console.log(numbers);
+
+console.log(squares);
+console.log(cubes);
+
+function kare(sayilar){
+    return Math.pow(sayilar,2);
+}
+function kup(sayilar){
+    return Math.pow(sayilar,3);
+}*/
+
+
+/*const ogrenciler = ["kerem" , "ali" , "nimet", "mehmet", "damla" , "ayse"];
+const toUpperCase = ogrenciler.map(uppercase);
+console.log(ogrenciler);
+console.log(toUpperCase);
+function uppercase(kelime){
+    return kelime.toUpperCase();
+}*/
+
+
+const tarih = ["2005-10-05", "2018-31-11", "2008-08-07"];
+const bolunmusTarih = tarih.map(ayirma);
+
+console.log(bolunmusTarih);
+
+function ayirma(elementler){
+    const bolme = elementler.split("-");
+    return `${bolme[1]}/${bolme[2]}/${bolme[0]}`;
+}

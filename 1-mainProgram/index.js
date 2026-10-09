@@ -344,3 +344,25 @@ function minValue(previous,next){
 }*/
 
 /*---------------------------------------------- Function Expressions ------------------------------ */
+
+/*const Hello = function(){
+    window.alert("Hello Everone!");
+}
+Hello();*/
+
+/*----------------------------------------------- Arrow Functions ----------------------------------- */
+
+const number = [1,2,3,4,5,6];
+
+const karesi = number.map((element) => Math.pow(element,2));
+const kupu = number.map((element) => Math.pow(element,3));
+const ciftSayilar = number.filter((element) => element%2===0 ); 
+const tekSayilar = number.filter((sayilar) => sayilar%2 !== 0);
+const total = number.reduce((toplamdeger,element) => toplamdeger+element);
+
+console.log(number);
+console.log(karesi);
+console.log(kupu);
+console.log(ciftSayilar);
+console.log(tekSayilar);
+console.log(total);

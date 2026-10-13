@@ -352,7 +352,10 @@ Hello();*/
 
 /*----------------------------------------------- Arrow Functions ----------------------------------- */
 
-const number = [1,2,3,4,5,6];
+/*const merhaba = () => console.log("Selamlar Canlarım");
+merhaba();*/
+
+/*const number = [1,2,3,4,5,6];
 
 const karesi = number.map((element) => Math.pow(element,2));
 const kupu = number.map((element) => Math.pow(element,3));
@@ -365,4 +368,37 @@ console.log(karesi);
 console.log(kupu);
 console.log(ciftSayilar);
 console.log(tekSayilar);
-console.log(total);
+console.log(total);*/
+
+/*---------------------------------------------- Objects ------------------------------------------------ */
+
+/*const karakter = {
+    karakterAdi : "Sungerbob",
+    karakterSoyadi : "Karepantolon",
+    calisma : true,
+    yas : 30,
+    merhaba : function(){console.log("Selamlar Millet Ben Sungerbob !")},
+}
+const karakter2 = {
+    karakterAdi:"Patrick",
+    karakterSoyadi:"Jane",
+    calisma : true,
+    yas : 37,
+    merhaba : function(){console.log(`Selamlar Millet Benim Ismim de ${this.karakterAdi} ${this.karakterSoyadi} `)},
+}
+
+console.log(karakter);
+console.log(karakter2);
+
+karakter.merhaba();
+karakter2.merhaba();*/
+
+/*console.log(karakter.karakterAdi);
+console.log(karakter.karakterSoyadi);
+console.log(karakter.calisma);
+console.log(karakter.yas);
+
+console.log(karakter2.karakterAdi);
+console.log(karakter2.karakterSoyadi);
+console.log(karakter2.calisma);
+console.log(karakter2.yas);*/

@@ -438,3 +438,29 @@ console.log(car1.model);
 console.log(car1.yil);
 console.log(car1.renk);
 car1.drive();*/
+
+/*------------------------------------------------------- Class -------------------------------------------------- */
+
+class Urun{
+    constructor(isim, fiyat){
+        this.isim = isim;
+        this.fiyat = fiyat;
+    }
+    gostergeUrun(){
+        console.log(`Urun  : ${this.isim}`);
+        console.log(`Fiyat : ${this.fiyat.toFixed(2)} ₺`);
+    }
+    lastTotal(vergi){
+        return this.fiyat + (this.fiyat * vergi / 100); 
+    }
+}
+const salesTaxes = 20;
+const urun1 = new Urun("T-shirt",199.99);
+const urun2 = new Urun("Hırka",449.9);
+
+const total = urun2.lastTotal(salesTaxes);
+
+urun2.gostergeUrun();
+
+console.log(`Toplam Tutariniz (Vergiler Ile) : ${total.toFixed(2)} ₺ `);
+

@@ -377,14 +377,16 @@ console.log(total);*/
     karakterSoyadi : "Karepantolon",
     calisma : true,
     yas : 30,
-    merhaba : function(){console.log("Selamlar Millet Ben Sungerbob !")},
+    merhaba : function(){console.log("Selamlar Millet Ben Sungerbob !")}
 }
 const karakter2 = {
     karakterAdi:"Patrick",
     karakterSoyadi:"Jane",
     calisma : true,
     yas : 37,
-    merhaba : function(){console.log(`Selamlar Millet Benim Ismim de ${this.karakterAdi} ${this.karakterSoyadi} `)},
+    merhaba : function(){console.log(`Selamlar Millet Benim Ismim de ${this.karakterAdi} ${this.karakterSoyadi} `)}             
+    
+    !!!!  this methodu arrow fonksiyonalarda çalışmazmış !!!!!
 }
 
 console.log(karakter);
@@ -402,3 +404,37 @@ console.log(karakter2.karakterAdi);
 console.log(karakter2.karakterSoyadi);
 console.log(karakter2.calisma);
 console.log(karakter2.yas);*/
+
+/*------------------------------------------------- Constructor ---------------------------------------------------- */
+
+/*function Car(marka,model,yil,renk){
+    this.marka = marka,
+    this.model= model,
+    this.yil = yil,
+    this.renk = renk,
+    this.drive = function(){ return console.log(`Dostum Bu ${this.marka} ${this.model} muhteşemmiş. Hemde ${this.yil} model ve ${this.renk} renkte.`)}
+    /*eğerki ben burada "this." yı kullanmazsam daha sonradan değeri değiştirmek istesem bana yine ilk koyduğum değeri döndürecekti.
+     Mesela Bmw yerine Audi yazsam sonradan her bu değeri çağırdığımda bana Bmw olarak sonuç çıkartacaktı */  /*
+}
+
+const car1= new Car("Ford","GT",2024,"beyaz");
+const car2 = new Car("Nissan", "R-34 GTR Nismo",1995,"mavi-siyah");
+const car3= new Car("Bmw","X5",2025,"Siyah");
+
+console.log(car3.marka);
+console.log(car3.model);
+console.log(car3.yil);
+console.log(car3.renk);
+car3.drive();
+console.log(" ");
+console.log(car2.marka);
+console.log(car2.model);
+console.log(car2.yil);
+console.log(car2.renk);
+car2.drive();
+console.log(" ");
+console.log(car1.marka);
+console.log(car1.model);
+console.log(car1.yil);
+console.log(car1.renk);
+car1.drive();*/

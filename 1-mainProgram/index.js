@@ -407,12 +407,17 @@ console.log(karakter2.yas);*/
 
 /*------------------------------------------------- Constructor ---------------------------------------------------- */
 
+/*kurabiye kalıbına benzetebilirsin: Kalıp tektir (constructor), ancak o kalıptan bastığın kurabiyeler (nesneler) binlercedir ve hepsi aynı şekle sahiptir.*/
+
+
 /*function Car(marka,model,yil,renk){
     this.marka = marka,
     this.model= model,
     this.yil = yil,
     this.renk = renk,
+
     this.drive = function(){ return console.log(`Dostum Bu ${this.marka} ${this.model} muhteşemmiş. Hemde ${this.yil} model ve ${this.renk} renkte.`)}
+   
     /*eğerki ben burada "this." yı kullanmazsam daha sonradan değeri değiştirmek istesem bana yine ilk koyduğum değeri döndürecekti.
      Mesela Bmw yerine Audi yazsam sonradan her bu değeri çağırdığımda bana Bmw olarak sonuç çıkartacaktı */  /*
 }
@@ -441,7 +446,7 @@ car1.drive();*/
 
 /*------------------------------------------------------- Class -------------------------------------------------- */
 
-class Urun{
+/*class Urun{
     constructor(isim, fiyat){
         this.isim = isim;
         this.fiyat = fiyat;
@@ -462,5 +467,57 @@ const total = urun2.lastTotal(salesTaxes);
 
 urun2.gostergeUrun();
 
-console.log(`Toplam Tutariniz (Vergiler Ile) : ${total.toFixed(2)} ₺ `);
+console.log(`Toplam Tutariniz (Vergiler Ile) : ${total.toFixed(2)} ₺ `);*/
 
+/*------------------------------------------------ Static --------------------------------------------- */
+
+/*class MathUtil{
+    static PI = 3.14159;
+
+    static capHesaplama(yaricap){
+        return yaricap * 2 ;
+    }
+    static cevreHesaplama(yaricap){
+        return this.PI * 2* yaricap;
+    }
+    static alanHesaplama(yaricap){
+        return this.PI * yaricap * yaricap;
+    }
+}
+
+console.log(MathUtil.PI);
+console.log(MathUtil.capHesaplama(50));
+console.log(MathUtil.cevreHesaplama(10));
+console.log(MathUtil.alanHesaplama(10));*/
+
+
+
+
+/*class User{
+    static userCount = 0;
+
+    constructor(username){
+        this.username = username;
+        User.userCount ++;
+    }
+    sayhello(){
+        console.log(`Merhabalar Benim adım ${this.username}.`);
+    }
+    static getUserCount(){
+        console.log(`Şu an aktif ${User.userCount} kişi aktif.`);
+    }
+
+}
+
+const user1 = new User("Patrick Jane");
+const user2 = new User("Kerem Taha Yurtlu");
+const user3 = new User("Terassa Lisbon");
+
+console.log(user1.username);
+user1.sayhello();
+console.log(user2.username);
+user2.sayhello();
+console.log(user3.username);
+user3.sayhello();
+
+User.getUserCount();*/

@@ -521,3 +521,53 @@ console.log(user3.username);
 user3.sayhello();
 
 User.getUserCount();*/
+
+/*------------------------------------------ Inheritance ----------------------------------*/
+
+
+/*class Hayvan{
+    alive = true;
+
+    eat(){
+        console.log(`${this.name} şuan yemek yemektedir.`);
+    }
+    sleep(){
+        console.log(`${this.name} şuan uyumaktadır.`);
+    }
+}
+class Tavsan extends Hayvan{
+    name = "Tavşan";
+
+    run(){
+        console.log(`Tavşan şuan koşuyor.`);
+    }
+}
+class Balik extends Hayvan {
+    name = "Balik";
+    swim(){
+        console.log("Balık şuan yüzüyor.");
+    }
+}
+class At extends Hayvan{
+    name = "At";
+    kisneme(){
+        console.log("At şuan kişnişyor.");
+    }
+}
+
+const tavsan = new Tavsan();
+const balik = new Balik();
+const at = new At();
+
+console.log(tavsan.alive);
+tavsan.sleep();
+tavsan.eat();
+
+at.sleep();
+balik.eat();
+
+at.kisneme();
+tavsan.run();
+balik.swim();*/
+
+/*----------------------------------------------------------------- */

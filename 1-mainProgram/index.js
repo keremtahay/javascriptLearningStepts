@@ -697,3 +697,57 @@ const person2 = new Person("Ahmet","Malik",45);
 
 console.log(person1.ad , person1.soyad , person1.yas);
 console.log(person2.ad , person2.soyad , person2.yas); */
+
+/*----------------------------------------- Destructuring ----------------------------------*/
+
+/*iki değerin yerlerini değiştirmek */
+
+/*let a = 1;
+let b = 2;
+
+[a,b] = [b,a];
+console.log(a);
+console.log(b);*/
+
+/*Dizideki iki elementin yerlerini değiştirmek*/
+
+/*const renkler = ["mavi", "beyaz", "sarı", "kırmızı", "siyah" ];
+
+/*[renkler[0], renkler[4]] = [renkler[4], renkler[0]];
+console.log(renkler);*/
+
+/*Dizi elemanlarını değişkenlere atamak için*/
+
+/*const [ilkRenk , ikinciRenk, ucuncuRenk, ...dizininKalanları] = renkler;
+
+console.log(ilkRenk);
+console.log(ikinciRenk);
+console.log(ucuncuRenk);
+console.log(dizininKalanları);*/
+
+const person1 ={
+    firstName : "Patrick",
+    lastName : "Jane",
+    age : 37,
+    job : "CBI Consultant"
+}
+const person2 ={
+    firstName : "kerem",
+    lastName : "Yıldız",
+    age : "24",
+}
+
+/*const {firstName,lastName,age,job = "unemployed"} = person2;
+
+console.log(firstName);
+console.log(lastName);
+console.log(age);
+console.log(job);*/
+
+function displayPerson({firstName,lastName,age,job="unemployed"}){
+    console.log(`Person's Name : ${firstName} ${lastName}`);
+    console.log(`         Age  : ${age}`);
+    console.log(`         Job  : ${job}`);
+}
+displayPerson(person1);
+displayPerson(person2);

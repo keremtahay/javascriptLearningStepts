@@ -572,12 +572,38 @@ balik.swim();*/
 
 /*---------------------------------------- Super ------------------------------------------- */
 
+/*class Hayvanlar{
+    constructor(ad, yas){
+        this.ad = ad;
+        this.yas = yas;
+    }
+}
+class Balık extends Hayvanlar{
+    constructor(ad,yas,yuzme){
+        super(ad,yas);
+        this.yuzme= yuzme;
+    }
+}
+class Kartal extends Hayvanlar{
+    constructor(ad,yas,ucma){
+        super(ad,yas);
+        this.ucma = ucma;
+    }
+}
+class At extends Hayvanlar{
+    constructor(ad,yas,kosma){
+        super(ad,yas);
+        this.kosma = kosma;
+    }
+}
 
+const balik = new Balık("Nemo",5,10);
+const kartal = new Kartal("Beşiktas",15,50);
+const at = new At("Beyaz",12,45);
 
-
-
-
-
+console.log(at.ad,at.yas ,at.kosma );
+console.log(balik.ad, balik.yas, balik.yuzme);
+console.log(kartal.ad,kartal.yas ,kartal.ucma);*/
 
 
 
@@ -670,4 +696,4 @@ const person1 = new Person("Kerem","Yurtlu",21);
 const person2 = new Person("Ahmet","Malik",45);
 
 console.log(person1.ad , person1.soyad , person1.yas);
-console.log(person2.ad , person2.soyad , person2.yas);*/
+console.log(person2.ad , person2.soyad , person2.yas); */

@@ -570,4 +570,104 @@ at.kisneme();
 tavsan.run();
 balik.swim();*/
 
-/*----------------------------------------------------------------- */
+/*---------------------------------------- Super ------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------- GEt & SET ------------------------------------*/
+
+/*class Reactangle{
+    constructor(boy, en){
+        this.boy = boy;
+        this.en = en;
+    }
+
+    set en(newEn){
+
+        if(newEn > 0){
+            this._en = newEn;
+        }else{
+            console.error("Yanlış Değer Girilmiş.");
+        }
+    }
+
+    set boy(newBoy){
+        if(newBoy>0){
+            this._boy = newBoy;
+        }else{
+            console.error("Yanlış Değer Girilmiş.");
+        }
+
+    }
+
+    get en(){
+        return `${this._en} cm`;
+    }
+    get boy(){
+        return `${this._boy} cm`;
+    }
+    get alan(){
+        return `${(this._boy * this._en)} cm^2`;
+    }
+   
+}
+
+const reactangle = new Reactangle(200,5);
+
+console.log(reactangle.en);
+console.log(reactangle.boy);
+console.log(reactangle.alan);*/
+
+
+
+/*class Person{
+    constructor(ad,soyad,yas){
+        this.ad = ad;
+        this.soyad = soyad;
+        this.yas = yas;
+    }
+
+    set ad(newAd){
+        if(typeof newAd === "string" && newAd.length>0){
+            this._ad = newAd;
+        }else{
+            console.error("Hatalı Giriş Yapıldı");
+        }
+    }
+    set soyad(newSoyad){
+        if(typeof newSoyad === "string" && newSoyad.length >0){
+            this._soyad = newSoyad;
+        }else{
+            console.error("Hatali Giriş Yapıldı");
+        }
+    }
+    set yas(newYas){
+        if(newYas>0 && typeof newYas === "number"){
+            this._yas = newYas;
+        }else{
+            console.error("Hatalı Giriş Yapıldı");
+        }
+    }
+    get ad(){
+        return this._ad;
+    }
+    get soyad(){
+        return this._soyad;
+    }
+    get yas(){
+        return this._yas;
+    }
+}
+
+const person1 = new Person("Kerem","Yurtlu",21);
+const person2 = new Person("Ahmet","Malik",45);
+
+console.log(person1.ad , person1.soyad , person1.yas);
+console.log(person2.ad , person2.soyad , person2.yas);*/

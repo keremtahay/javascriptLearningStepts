@@ -725,7 +725,7 @@ console.log(ikinciRenk);
 console.log(ucuncuRenk);
 console.log(dizininKalanları);*/
 
-const person1 ={
+/*const person1 ={
     firstName : "Patrick",
     lastName : "Jane",
     age : 37,
@@ -735,14 +735,14 @@ const person2 ={
     firstName : "kerem",
     lastName : "Yıldız",
     age : "24",
-}
+}*/
 
 /*const {firstName,lastName,age,job = "unemployed"} = person2;
 
 console.log(firstName);
 console.log(lastName);
 console.log(age);
-console.log(job);*/
+console.log(job);
 
 function displayPerson({firstName,lastName,age,job="unemployed"}){
     console.log(`Person's Name : ${firstName} ${lastName}`);
@@ -750,4 +750,61 @@ function displayPerson({firstName,lastName,age,job="unemployed"}){
     console.log(`         Job  : ${job}`);
 }
 displayPerson(person1);
-displayPerson(person2);
+displayPerson(person2);*/
+
+/*--------------------------------------------------- Nested Object --------------------------------- */
+
+/*Nesne içinde nesne yapmak istersek kullanıyoruz. Burada "adres" kısmı nested object olarak geçiyor
+/*const karakter = {
+    firstName : "Patrick",
+    lastName : "Jane",
+    isStudent : false,
+    hobies : ["drink tea", "kill Red John", "to shout Lisbon"],
+    adres : {
+        ilçe : "Beyoğlu",
+        sehir : "İstanbul",
+        ülke : "Türkiye",
+    }
+}
+
+console.log(karakter.firstName);
+console.log(karakter.lastName);
+console.log(karakter.hobies[1]);
+console.log(karakter.adres.ilçe);
+console.log(karakter.adres);
+
+for(const özellik in karakter.adres){
+    console.log(karakter.adres[özellik]);
+}
+
+console.log(" ");
+
+for(const sırala in karakter.hobies){
+    console.log(karakter.hobies[sırala]);
+}*/
+
+
+/*Buradaki örnekte aslında Adres Classı bizim child classımız sayılıyor
+/*class Kisi{
+    constructor(ad, yas, ...adres){
+        this.ad=ad;
+        this.yas=yas;
+        this.adres = new Adres(...adres);
+    }
+}
+
+class Adres{
+    constructor(ilçe , şehir, ülke){
+        this.ilçe = ilçe;
+        this.şehir = şehir;
+        this.ülke = ülke;
+    }
+}
+
+const karakter1 = new Kisi("Hüseyin",21, "Sultanbeyli","İstanbul","Türkiye");
+const karakter2 = new Kisi("Hikmet",22 , "Pendik","İStanbul","Türkiye");
+const karakter3 = new Kisi("Fatih",31,"Karasu","Sakarya","Türkiye");
+
+console.log(karakter3.adres.şehir);
+console.log(karakter3.ad);*/
+

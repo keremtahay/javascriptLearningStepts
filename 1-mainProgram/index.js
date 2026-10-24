@@ -254,7 +254,7 @@ function display(element){
     console.log(element);
 }*/
 
-/*------------------------------- Maps -----------------------------------------------*/
+/*-------------------------------------------------------------- Maps -----------------------------------------------*/
 
 /*const numbers = [1,2,3,4,5];
 const squares = numbers.map(kare);
@@ -336,6 +336,7 @@ const minGrade = grades.reduce(minValue);
 
 console.log(maxGrades);
 console.log(minGrade);
+
 function maxValue(previous,next){
     return Math.max(previous,next);
 }
@@ -808,3 +809,54 @@ const karakter3 = new Kisi("Fatih",31,"Karasu","Sakarya","Türkiye");
 console.log(karakter3.adres.şehir);
 console.log(karakter3.ad);*/
 
+/*------------------------------------------------------ Array ofObjects ---------------------------------------- */
+
+const meyveler = [{name :"Apple"  , color : "Red" , calories:95},
+                  {name :"Banana" , color : "Yellow", calories:45},
+                  {name :"orange", color : "Orange", calories: 75},
+                  {name :"Coconut", color: "Brown", calories: 150 },
+                  {name :"Pineapple",color :"Yellow", calories : 37}
+]
+/*console.log(meyveler[0].calories);*/
+
+meyveler.push({name : "grapes" , color: "purple", calories: 252});
+
+/*meyveler.splice(2,4);
+console.log(meyveler);*/
+
+
+
+meyveler.forEach(meyveler => console.log(meyveler.name));
+
+
+
+const meyvelerinIsmi = meyveler.map(meyveler => meyveler.name);
+console.log(meyvelerinIsmi);
+
+const meyvelerinRengi = meyveler.map(meyveler => meyveler.color);
+console.log(meyvelerinRengi);
+
+const meyvelerinKalorisi = meyveler.map(meyveler =>meyveler.calories);
+console.log(meyvelerinKalorisi);
+
+
+
+const sariMeyveler = meyveler.filter(meyveler => meyveler.color === "Yellow");
+console.log(sariMeyveler);
+
+const azKaloriliMeyveler = meyveler.filter(meyveler =>meyveler.calories <90);
+console.log(azKaloriliMeyveler);
+
+const cokKaloriliMeyveler = meyveler.filter(meyveler => meyveler.calories >90);
+console.log(cokKaloriliMeyveler);
+
+
+
+const maxMeyveler = meyveler.reduce((max, meyve) => meyve.calories > max.calories ? meyve : max);
+console.log(maxMeyveler);
+
+const minMeyveler = meyveler.reduce((min,meyve) => meyve.calories < min.calories ? meyve : min);
+console.log(minMeyveler);
+
+const totalCalories = meyveler.reduce((total,meyve) => total + meyve.calories,0);
+console.log(totalCalories);
